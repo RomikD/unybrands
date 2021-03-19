@@ -1,0 +1,53 @@
+---
+label: Career 4
+hide_body: true
+fields:
+- type: text
+  name: title
+  label: Title
+- type: text
+  name: city
+  label: city
+- type: text
+  name: layout
+  label: layout
+  default: career-post
+- type: textarea
+  name: description
+  label: description
+- type: text
+  name: page_about_role_text
+  label: Page about role text
+- name: responsibilities
+  type: list
+  config:
+    use_select: false
+    min: 
+    max: 
+  label: Responsibilities
+- name: requirements
+  type: list
+  config:
+    use_select: false
+    min: 
+    max: 
+  label: Requirements
+- name: requirements_bootom_text
+  type: text
+  config:
+    required: false
+  label: Requirements Bootom text
+- name: about_unybrand_text_row_1
+  type: text
+  config:
+    required: false
+  label: About unybrand text row 1
+- name: about_unybrand_text_row_2
+  type: text
+  config:
+    required: false
+  label: About unybrand text row 2
+pages:
+- content/career/associate-investment-and-integration-1.md
+- content/career/associate-investment-and-integration.md
+- content/career/manager-growth.md

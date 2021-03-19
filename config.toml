@@ -1,0 +1,35 @@
+baseURL = "/"
+languageCode = "en-us"
+theme = "papaya"
+title = "unybrand"
+
+[[menu.main]]
+hasChildren = true
+identifier = "About us"
+name = "About us"
+url = "/about/"
+weight = 1
+
+[[menu.main]]
+hasChildren = true
+identifier = "Team"
+name = "Team"
+url = "/team/"
+weight = 2
+[[menu.main]]
+hasChildren = false
+name = "How We Work"
+url = "/sell-to-us/"
+weight = 3
+[[menu.main]]
+hasChildren = false
+name = "Resources"
+url = ""
+weight = 5
+
+[params]
+authorName = "webdevelop.pro"
+dateFormat = "Jan 2, 2006"
+googleAdSense = "ca-pub-0000000000000000"
+googleAnalytics = "UA-000000000-1"
+

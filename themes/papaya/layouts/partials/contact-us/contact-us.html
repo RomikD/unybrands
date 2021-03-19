@@ -1,0 +1,79 @@
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); })(window,document,'script','dataLayer','GTM-NFCXDLF');</script>
+<section id="contact">
+    {{ with .Site.GetPage "contact-us" "contact_us" }}
+    <div class="contact">
+        <div class="left-b">
+            <h1>{{ .Title }}</h1>
+            <div class="text-block">
+                <p>{{ with .Page.Params.description }}{{ . }}{{ end }}<a href="mailto:{{ with .Page.Params.mail }}{{ . }}{{ end }}">{{ with .Page.Params.mail }}{{ . }}{{ end }}</a>
+                    <br>
+                </p>
+            </div>
+            <div class="address-block">
+                <h4 class="title">
+                    {{ with .Page.Params.sub_title }}{{ . }}{{ end }}
+                </h4>
+                <p>{{ with .Page.Params.first_office }}{{ . }}{{ end }}</p>
+                <p>{{ with .Page.Params.second_office | safeHTML }}{{ . }}{{ end }}</p>
+                <p>{{ with .Page.Params.third_office | safeHTML }}{{ . }}{{ end }}</p>
+
+            </div>
+        </div>
+        <div class="right-b">
+            <form id="xhr-form-contact">
+                <fieldset>
+                    <p><label for="name">Your full name <span class="required">*</span></label><input type="text" id="name"></p>
+                    <p><label for="email">Your E-Mail <span class="required">*</span></label><input type="email" id="email"></p>
+                    <p><label for="message">Your message to unybrands <span class="required">*</span></label><textarea rows="10" cols="45" name="text" id="message"></textarea></p>
+                </fieldset>
+                <div id="submit">
+                    <input value="Send" class="submit-btn" type="button">
+                    <img src="/images/arrow-white.svg" alt="">
+                </div>
+                <div>
+                    <span class="result"></span>
+                    <div class="eror-form"><span class="text"></span></div>
+                </div>
+            </form>
+        </div>
+        {{ end }}
+    </div>
+    <!--                <div class="contact-b">-->
+    <!--                    <div class="title"> <h2>Let’s meet</h2></div>-->
+    <!--                    <div class="texts">-->
+    <!--                        <div class="first"><p>Eager to learn more about selling your Amazon FBA or DTC brand for a great price? You’re in the best hands. Just provide us with your contact details and we will be in touch.</p></div>-->
+    <!--                        <div class="second"><p>Should you have any questions in the meantime, you can reach us at intro@unybrands.com at any time.</p></div>-->
+    <!--                    </div>-->
+    <!--                    <div class="form-b">-->
+    <!--                        <form>-->
+    <!--                            <div class="information">-->
+    <!--                                <div class="one-input name">-->
+    <!--                                    <input type="text" placeholder="Your full name">-->
+    <!--                                </div>-->
+    <!--                                <div class="one-input name">-->
+    <!--                                    <input type="text" placeholder="Your full name">-->
+    <!--                                </div>-->
+    <!--                                <div class="one-input name">-->
+    <!--                                    <input type="text" placeholder="Your full name">-->
+    <!--                                </div>-->
+    <!--                                <div class="one-input name">-->
+    <!--                                    <input type="text" placeholder="Your full name">-->
+    <!--                                </div>-->
+    <!--                                <div class="one-input name">-->
+    <!--                                    <input type="text" placeholder="Your full name">-->
+    <!--                                </div>-->
+    <!--                                <div class="one-input name">-->
+    <!--                                    <input type="text" placeholder="Your full name">-->
+    <!--                                </div>-->
+    <!--                                <div class="one-input name">-->
+    <!--                                    <input type="text" placeholder="Your full name">-->
+    <!--                                </div>-->
+    <!--                            </div>-->
+    <!--                            <div id="submit">-->
+    <!--                                <input type="submit" value="Send" class="wpcf7-form-control wpcf7-submit">-->
+    <!--                                <img src="src/assets/img/arrow-white.svg" alt="">-->
+    <!--                            </div>-->
+    <!--                        </form>-->
+    <!--                    </div>-->
+    <!--                </div>-->
+</section>

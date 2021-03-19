@@ -1,0 +1,57 @@
+---
+label: Post
+hide_body: true
+display_field: title
+fields:
+- type: text
+  name: title
+  label: title
+- name: layout
+  type: text
+  config:
+    required: false
+  label: layout
+  default: blog-post
+  hidden: false
+- type: text
+  name: description
+  label: description
+- name: date_number
+  type: text
+  config:
+    required: false
+  label: Date number
+- name: month_year
+  type: text
+  config:
+    required: false
+  label: Month year
+- name: top_text_block
+  type: text
+  config:
+    required: false
+  label: Top text block
+- name: img
+  type: text
+  config:
+    required: false
+  label: img
+- name: content_block
+  type: list
+  config:
+    use_select: false
+    min: 
+    max: 
+  label: Content block
+- name: contact_name
+  type: text
+  config:
+    required: false
+  label: Contact name
+- name: mail
+  type: text
+  config:
+    required: false
+  label: Mail
+pages:
+- content/blog/unybrands-launches-e-commerce-platform-to-acquire-maximize-growth-potential-for-online-brands-closes-25m-seed-funding-round.md

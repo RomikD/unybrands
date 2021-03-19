@@ -1,0 +1,39 @@
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); })(window,document,'script','dataLayer','GTM-NFCXDLF');</script>
+<section id="podcasts">
+    {{ with .Site.GetPage "blog" }}
+    <h1 id="title-page">
+        {{ .Title }}
+    </h1>
+    <div class="articles">
+        {{ range .Pages }}
+            <div class="one-row">
+            <div class="date">
+                <p class="number">{{ with .Page.Params.date_number }}{{ . }}{{ end }}</p>
+                <p>{{ with .Page.Params.month_year }}{{ . }}{{ end }}</p>
+            </div>
+            <div class="info">
+                <p class="title">{{ .Title }}</p>
+                <p>{{ with .Page.Params.description }}{{ . }}{{ end }}</p>
+                <a style="font-style: normal; font-weight: bold; font-size: 18px; line-height: 150%; text-transform: uppercase; color: #6ba8e7; display: flex; margin-top: 15px; align-items: center;" href="{{ .URL }}">READ MORE  <img style="margin-left: 5px; max-width: 29px;" src="/images/arrow-blue.svg" alt="arrow"></a>
+            </div>
+            <div class="img">
+                <img src="/images/image-small.png" alt="">
+            </div>
+        </div>
+        {{ end }}
+    </div>
+</section>
+{{ end }}
+
+
+
+
+
+
+
+
+
+
+
+
+

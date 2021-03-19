@@ -1,0 +1,78 @@
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); })(window,document,'script','dataLayer','GTM-NFCXDLF');</script>
+<section id="application-form">
+    <div class="title">
+        {{ with .Site.GetPage "application" "application_ontent" }}
+        <div class="block">
+            <div>
+                <h1>{{ .Title }}</h1>
+            </div>
+            <div>
+                <p>{{ with .Page.Params.second_block_title }}{{ . }}{{ end }}</p>
+            </div>
+        </div>
+    </div>
+    <div class="form block">
+        <form id="xhr-application" action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+            <input type=hidden name="oid" value="00D4L000000D8oQ">
+            <input type=hidden name="retURL" value="http://unybrands.netlify.app/">
+            <!--  ----------------------------------------------------------------------  -->
+            <!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
+            <!--  these lines if you wish to test in debug mode.                          -->
+<!--              <input type="hidden" name="debug" value=1>-->
+<!--              <input type="hidden" name="debugEmail" value="asanovamelek@gmail.com">-->
+
+            <fieldset>
+                <p class="field-input">
+                    <label for="name">Your full name <span class="required">*</span> </label>
+                    <input id="name" name="first_name" type="text" maxlength="40" size="20" required>
+                    <span class="text"></span>
+                </p>
+                <p class="field-input">
+                    <label for="email">Your E-Mail <span class="required">*</span> </label>
+                    <input id="email" name="email" type="email" maxlength="80" size="20" required>
+                    <span class="text"></span>
+                </p>
+                <p class="field-input">
+                    <label for="phone">Your phone number <span class="required">*</span> </label>
+                    <input id="phone" name="phone" type="tel" maxlength="40" size="20" pattern="^[0-9]*$" required>
+                    <span class="text"></span>
+                </p>
+                <p class="field-input">
+                    <label for="company">Brand name <span class="required">*</span></label>
+                    <input id="company" name="company" type="text" maxlength="40" size="20" required>
+                    <span class="text"></span>
+                </p>
+                <p class="pcheckboxes"><label>Company Revenue (past 12 months) <span class="required">*</span></label>
+                <div class="checkboxes-block">
+
+                    <div class="checkboxes">
+                        <input required type="radio" id="500" name="revenue" value="< $500k">
+                        <label for="500">&LT; $500k</label>
+
+                        <input required type="radio" id="500-1" name="revenue" value="$500k-$1M">
+                        <label for="500-1">$500k-$1M</label>
+
+                        <input required type="radio" id="1m" name="revenue" value="> $1M">
+                        <label for="1m">&gt; $1M</label>
+                    </div>
+                    <span class="text"></span>
+
+                </div>
+                </p>
+                <p><label for="description">Tell us more about your Company</label><textarea rows="10" cols="45" name="description" id="description"></textarea></p>
+            </fieldset>
+            <div id="submit">
+                <input type="button" value="Send" class="submit-btn">
+                <img src="/images/arrow-blue.svg" alt="">
+            </div>
+            <div>
+                <span class="result"></span>
+                <div class="error-form"><span class="text"></span></div>
+            </div>                    </form>
+        <div class="red-to-sel-text-block">
+            <p>Not sure if you’re ready to sell yet? We’re happy to answer any questions you might have. Reach out to us at <a href="mailto:growth@unybrands.com">growth@unybrands.com</a>.
+            </p>
+        </div>
+    </div>
+</section>
+{{ end }}

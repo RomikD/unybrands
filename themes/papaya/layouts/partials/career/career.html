@@ -1,0 +1,56 @@
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); })(window,document,'script','dataLayer','GTM-NFCXDLF');</script>
+<section id="one-career">
+    {{ with .Site.GetPage "career" }}
+    <section id="one-c-top-block">
+        <h1>{{ .Title }}</h1>
+        <div class="text-block">
+            <p>{{ with .Page.Params.description }}{{ . }}{{ end }}</p>
+        </div>
+    </section>
+    <section id="advisory">
+        <h2>{{ with .Page.Params.advisory_block_title }}{{ . }}{{ end }}</h2>
+        <div id="advisory-block">
+            <div class="advisory-row">
+                {{ range .Pages }}
+                    <div class="one-advisory-block">
+                        <div class="top-line"></div>
+                        <h3> {{ .Title }} </h3>
+                        <span class="city">{{ with .Page.Params.city }}{{ . }}{{ end }}</span>
+                        <p>
+                            The I&I Associate will support the investment and integration team in evaluating new acquisition opportunities, leading due diligence processes and overseeing the integration of new acquisitions into the unybrands’ ecosystem.
+
+                        </p>
+                        <a href="{{ .URL }}">READ MORE <img src="/images/arrow-blue.svg" alt="arrow"></a>
+                    </div>
+                {{ end }}
+            </div>
+<!--            <div class="advisory-row">-->
+<!--                <div class="one-advisory-block">-->
+<!--                    <div class="top-line"></div>-->
+<!--                    <h3> Associate, Investment and Integration </h3>-->
+<!--                    <span class="city">Berlin</span>-->
+<!--                    <p>-->
+<!--                        The I&I Associate will support the investment and integration team in evaluating new acquisition opportunities, leading due diligence processes and overseeing the integration of new acquisitions into the unybrands’ ecosystem.-->
+
+<!--                    </p>-->
+<!--                    <a href="/associate-berlin">READ MORE <img src="/images/arrow-blue.svg" alt="arrow"></a>-->
+<!--                </div>-->
+<!--            </div>-->
+
+        </div>
+    </section>
+    {{ end }}
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+

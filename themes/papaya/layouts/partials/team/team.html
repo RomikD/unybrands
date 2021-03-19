@@ -1,0 +1,211 @@
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); })(window,document,'script','dataLayer','GTM-NFCXDLF');</script>
+<section id="team-top">
+    {{ with .Site.GetPage "team" "new_team" }}
+    <h1 id="title-page">
+        {{ .Title }}
+    </h1>
+    <div class="text-block">
+        <div class="left-block">
+            <p>
+                {{ with .Page.Params.second_block_title_left | safeHTML }}{{ . }}{{ end }}
+            </p>
+        </div>
+        <div class="right-block">
+            <p>
+                {{ with .Page.Params.second_block_title_right }}{{ . }}{{ end }}
+            </p>
+        </div>
+    </div>
+</section>
+<section id="experience">
+    <h2>{{ with .Page.Params.team_block_title }}{{ . }}{{ end }}</h2>
+    <div class="members">
+        <div class="one-m">
+            <div class="image">
+                <img src="{{ with .Page.Params.member1_team_img }}{{ . }}{{ end }}" alt="">
+            </div>
+            <p class="name">{{ with .Page.Params.member1_team_name }}{{ . }}{{ end }}</p>
+            <p class="position">{{ with .Page.Params.member1_team_position }}{{ . }}{{ end }}</p>
+            <p class="opys description">{{ with .Page.Params.member1_team_description }}{{ . }}{{ end }}</p>
+            <a href="">SHOW MORE  <img src="/images/arrow-blue.svg" alt="arrow"></a>
+            <a href="" class="showless">SHOW LESS  <img src="/images/showless.svg" alt="arrow"></a>
+        </div>
+        <div class="one-m">
+            <div class="image">
+                <img src="{{ with .Page.Params.member2_team_img }}{{ . }}{{ end }}" alt="">
+            </div>
+            <p class="name">{{ with .Page.Params.member2_team_name }}{{ . }}{{ end }}</p>
+            <p class="position">{{ with .Page.Params.member2_team_position }}{{ . }}{{ end }}</p>
+            <p class="opys description">{{ with .Page.Params.member2_team_description }}{{ . }}{{ end }}</p>
+            <a href="">SHOW MORE  <img src="/images/arrow-blue.svg" alt="arrow"></a>
+            <a href="" class="showless">SHOW LESS  <img src="/images/showless.svg" alt="arrow"></a>
+        </div>
+        <div class="one-m">
+            <div class="image">
+                <img src="{{ with .Page.Params.member3_team_img }}{{ . }}{{ end }}" alt="">
+            </div>
+            <p class="name">{{ with .Page.Params.member3_team_name }}{{ . }}{{ end }}</p>
+            <p class="position">{{ with .Page.Params.member3_team_position }}{{ . }}{{ end }}</p>
+            <p class="opys description">{{ with .Page.Params.member3_team_description }}{{ . }}{{ end }}</p>
+            <a href="">SHOW MORE  <img src="/images/arrow-blue.svg" alt="arrow"></a>
+            <a href="" class="showless">SHOW LESS  <img src="/images/showless.svg" alt="arrow"></a>
+        </div>
+        <div class="one-m">
+            <div class="image">
+                <img src="{{ with .Page.Params.member4_team_img }}{{ . }}{{ end }}" alt="">
+            </div>
+            <p class="name">{{ with .Page.Params.member4_team_name }}{{ . }}{{ end }}</p>
+            <p class="position">{{ with .Page.Params.member4_team_position }}{{ . }}{{ end }}</p>
+            <p class="opys description">{{ with .Page.Params.member4_team_description }}{{ . }}{{ end }}</p>
+            <a href="">SHOW MORE  <img src="/images/arrow-blue.svg" alt="arrow"></a>
+            <a href="" class="showless">SHOW LESS  <img src="/images/showless.svg" alt="arrow"></a>
+        </div>
+        <div class="one-m">
+            <div class="image">
+                <img src="{{ with .Page.Params.member5_team_img }}{{ . }}{{ end }}" alt="">
+            </div>
+            <p class="name">{{ with .Page.Params.member5_team_name }}{{ . }}{{ end }}</p>
+            <p class="position">{{ with .Page.Params.member5_team_position }}{{ . }}{{ end }}</p>
+            <p class="opys description">{{ with .Page.Params.member5_team_description }}{{ . }}{{ end }}</p>
+            <a href="">SHOW MORE  <img src="/images/arrow-blue.svg" alt="arrow"></a>
+            <a href="" class="showless">SHOW LESS  <img src="/images/showless.svg" alt="arrow"></a>
+        </div>
+        <div class="one-m">
+            <div class="image">
+                <img src="{{ with .Page.Params.member6_team_img }}{{ . }}{{ end }}" alt="">
+            </div>
+            <p class="name">{{ with .Page.Params.member6_team_name }}{{ . }}{{ end }}</p>
+            <p class="position">{{ with .Page.Params.member6_team_position }}{{ . }}{{ end }}</p>
+            <p class="opys description">{{ with .Page.Params.member6_team_description }}{{ . }}{{ end }}</p>
+            <a href="">SHOW MORE  <img src="/images/arrow-blue.svg" alt="arrow"></a>
+            <a href="" class="showless">SHOW LESS  <img src="/images/showless.svg" alt="arrow"></a>
+        </div>
+
+<!--        <div class="one-m">-->
+
+<!--            <div class="image">-->
+<!--                <img src="" alt="">-->
+<!--            </div>-->
+<!--            <p class="name"></p>-->
+<!--            <p class="position"></p>-->
+<!--            <p class="opys description"></p>-->
+<!--            <a href="">SHOW MORE  <img src="/images/arrow-blue.svg" alt="arrow"></a>-->
+<!--            <a href="" class="showless">SHOW LESS  <img src="/images/arrow-blue.svg" alt="arrow"></a>-->
+<!--        </div>-->
+<!--        <div class="one-m">-->
+<!--            <div class="image">-->
+<!--                <img src="" alt="">-->
+<!--            </div>-->
+<!--            <p class="name"></p>-->
+<!--            <p class="position"></p>-->
+<!--            <p class="opys description"></p>-->
+<!--            <a href="">SHOW MORE  <img src="/images/arrow-blue.svg" alt="arrow"></a>-->
+<!--            <a href="" class="showless">SHOW LESS  <img src="/images/arrow-blue.svg" alt="arrow"></a>-->
+<!--        </div>-->
+<!--        <div class="one-m">-->
+<!--            <div class="image">-->
+<!--                <img src="" alt="">-->
+<!--            </div>-->
+<!--            <p class="name"></p>-->
+<!--            <p class="position"></p>-->
+<!--            <p class="opys description"></p>-->
+<!--            <a href="">SHOW MORE  <img src="/images/arrow-blue.svg" alt="arrow"></a>-->
+<!--            <a href="" class="showless">SHOW LESS  <img src="/images/arrow-blue.svg" alt="arrow"></a>-->
+<!--        </div>-->
+<!--        <div class="one-m">-->
+<!--            <div class="image">-->
+<!--                <img src="" alt="">-->
+<!--            </div>-->
+<!--            <p class="name"></p>-->
+<!--            <p class="position"></p>-->
+<!--            <p class="opys description"></p>-->
+<!--            <a href="">SHOW MORE  <img src="/images/arrow-blue.svg" alt="arrow"></a>-->
+<!--            <a href="" class="showless">SHOW LESS  <img src="/images/arrow-blue.svg" alt="arrow"></a>-->
+<!--        </div>-->
+<!--        <div class="one-m">-->
+<!--            <div class="image">-->
+<!--                <img src="" alt="">-->
+<!--            </div>-->
+<!--            <p class="name"></p>-->
+<!--            <p class="position"></p>-->
+<!--            <p class="opys description"></p>-->
+<!--            <a href="">SHOW MORE  <img src="/images/arrow-blue.svg" alt="arrow"></a>-->
+<!--            <a href="" class="showless">SHOW LESS  <img src="/images/arrow-blue.svg" alt="arrow"></a>-->
+<!--        </div>-->
+    </div>
+</section>
+<div class="idea">
+    <section id="idea-sell">
+        <div class="quote">
+            <img src="/images/marks.svg" alt="">
+            <div class="txt">
+                <h4>
+                    {{ with .Page.Params.quote }}{{ . }}{{ end }}
+                </h4>
+                <p>{{ with .Page.Params.quote_autor }}{{ . }}{{ end }}</p>
+            </div>
+        </div>
+    </section>
+</div>
+<section id="advisory">
+    <h2>{{ with .Page.Params.advisory_block_title }}{{ . }}{{ end }}</h2>
+
+    <div id="advisory-block">
+        <div class="advisory-row">
+            <div class="one-advisory-block">
+                <div class="top-line"></div>
+                <h3> {{ with .Page.Params.advisory_block1_name }}{{ . }}{{ end }}  </h3>
+                <p>
+                    {{ with .Page.Params.advisory_block1_descroptin | safeHTML }}{{ . }}{{ end }}
+                </p>
+            </div>
+            <div class="one-advisory-block">
+                <div class="top-line"></div>
+                <h3>{{ with .Page.Params.advisory_block2_name }}{{ . }}{{ end }}</h3>
+                <p>{{ with .Page.Params.advisory_block2_descroptin | safeHTML}}{{ . }}{{ end }}</p>
+            </div>
+        </div>
+        <div class="advisory-row">
+            <div class="one-advisory-block">
+                <div class="top-line"></div>
+                <h3>{{ with .Page.Params.advisory_block3_name }}{{ . }}{{ end }}</h3>
+                <p>{{ with .Page.Params.advisory_block3_descroptin | safeHTML}}{{ . }}{{ end }}</p>
+            </div>
+            <div class="one-advisory-block">
+                <div class="top-line"></div>
+                <h3>{{ with .Page.Params.advisory_block4_name }}{{ . }}{{ end }}</h3>
+                <p>{{ with .Page.Params.advisory_block4_descroptin | safeHTML}}{{ . }}{{ end }}</p>
+            </div>
+        </div>
+        <div class="advisory-row">
+            <div class="one-advisory-block">
+                <div class="top-line"></div>
+                <h3>{{ with .Page.Params.advisory_block5_name }}{{ . }}{{ end }}</h3>
+                <p>{{ with .Page.Params.advisory_block5_descroptin | safeHTML}}{{ . }}{{ end }}</p>
+            </div>
+            <div class="one-advisory-block">
+                <div class="top-line"></div>
+                <h3></h3>
+                <p>
+                </p>
+
+            </div>
+        </div>
+    </div>
+</section>
+<section id="look-brand" class="look-team">
+    <div class="look-brand">
+        <div class="title">
+            <p>
+                {{ with .Page.Params.look_block_title }}{{ . }}{{ end }}
+            </p>
+        </div>
+        <div class="text-block">
+            <p>{{ with .Page.Params.look_block_text }}{{ . }}{{ end }}
+
+            </p>
+            <a class="pop-up-block-open" href="/sell-to-us/">SEE OUR STRATEGY <span> <img src="/images/arrow-white.svg" alt="arrow"> </span> </a>
+        </div>
+    </div>
+</section>
+{{ end }}

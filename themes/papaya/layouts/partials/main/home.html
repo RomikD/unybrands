@@ -1,0 +1,210 @@
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); })(window,document,'script','dataLayer','GTM-NFCXDLF');</script>
+{{ with .Site.GetPage "main" "header" }}
+<section class="header-bottom-head" style="background-image: url(/images/hbt.png);">
+    <div class="bottom-head">
+        <div class="text-block">
+            <p>{{ with .Page.Params.right_text_title }}{{ . }}{{ end }}</p>
+            <p>{{ with .Page.Params.right_text }}{{ . }}{{ end }}</p>
+        </div>
+        <div class="button mob">
+            <a href="/application/">{{ with .Page.Params.text_button }}{{ . }}{{ end }}</a>
+            <a href="/application/">
+                <img src="/images/arrow-white.svg" alt="">
+
+            </a>
+        </div>
+        <div class="title">
+            <h1>{{ .Title | safeHTML }}</h1>
+            <div class="button">
+                <a href="/application/">{{ with .Page.Params.text_button }}{{ . }}{{ end }}</a>
+                <a href="/application/"><img src="/images/arrow-white.svg" alt=""> </a>
+            </div>
+        </div>
+    </div>
+</section>
+{{ end }}
+{{ with .Site.GetPage "main" "second-screen" }}
+<section id="sec-screen" class="home">
+    <div class="screen-title-mob title">
+        <p> {{ .Title | safeHTML }} </p>
+    </div>
+    <div class="screen-img">
+        {{ with .Page.Params.first_img }}
+        <img src="{{ . }}" alt="plane">
+        {{ end }}
+        <img src="/images/home-mob-img.png" alt="" class="mob-home-img">
+    </div>
+    <div class="screen-text">
+        <div class="title">
+            <p> {{ .Title | safeHTML }} </p>
+        </div>
+        <div class="text-block">
+            <p>{{ with .Page.Params.description1 }}{{ . }}{{ end }}</p>
+            <p>{{ with .Page.Params.description2 }}{{ . }}{{ end }}</p>
+            <p>{{ with .Page.Params.description3 }}{{ . }}{{ end }}</p>
+        </div>
+        <div class="btnn">
+            <a href="{{ with .Page.Params.link_in_buttons }}{{ . }}{{ end }}">
+                <h3>
+                    We focus on <br> long-term success
+<!--                    {{ with .Page.Params.text_in_the_button }}{{ . }}{{ end }}-->
+                </h3>
+                <span><img  src="/images/arrow-blue.svg" alt="arrow-big"></span>
+            </a>
+        </div>
+    </div>
+</section>
+{{ end }}
+{{ with .Site.GetPage "main" "vision" }}
+<section id="vision" class="home">
+    <div class="title">
+        <div class="vision-line">
+            <p id="vision-number">01</p>
+            <div class="line"></div>
+        </div>
+        <p id="vision-title">{{ with .Page.Params.first_title }}{{ . }}{{ end }}</p>
+    </div>
+
+    <div class="text-block">
+        <div class="title-mob">
+            <p class="title">{{ with .Page.Params.first_title }}{{ . }}{{ end }}</p>
+        </div>
+        <p data-number="01" data-title="{{ with .Page.Params.first_title }}{{ . }}{{ end }}" class="first-p-text text-active">
+            {{ with .Page.Params.first_description }}{{ . }}{{ end }}
+        </p>
+        <div class="title-mob">
+            <p class="title">{{ with .Page.Params.second_title }}{{ . }}{{ end }}</p>
+        </div>
+        <p data-number="02" data-title="{{ with .Page.Params.second_title }}{{ . }}{{ end }}">
+            {{ with .Page.Params.second_description }}{{ . }}{{ end }}
+        </p>
+        <div class="title-mob">
+            <p class="title">{{ with .Page.Params.third_title }}{{ . }}{{ end }}</p>
+        </div>
+        <p data-number="03" data-title="{{ with .Page.Params.third_title }}{{ . }}{{ end }}">
+            {{ with .Page.Params.third_description }}{{ . }}{{ end }}
+        </p>
+        <div class="title-mob">
+            <p class="title">{{ with .Page.Params.fourth_title }}{{ . }}{{ end }}</p>
+        </div>
+        <p data-number="04" data-title="{{ with .Page.Params.fourth_title }}{{ . }}{{ end }}">
+            {{ with .Page.Params.fourth_description }}{{ . }}{{ end }}
+        </p>
+    </div>
+</section>
+
+
+<!--<section id="vision" class="home">-->
+<!--    <div data-id="first-title" class="title title-active">-->
+<!--        <div class="vision-line">-->
+<!--            <p>01</p>-->
+<!--            <div class="line"></div>-->
+<!--        </div>-->
+<!--        <p>{{ with .Page.Params.first_title }}{{ . }}{{ end }}</p>-->
+<!--    </div>-->
+<!--    <div data-id="second-title" class="title">-->
+<!--        <div class="vision-line">-->
+<!--            <p>02</p>-->
+<!--            <div class="line"></div>-->
+<!--        </div>-->
+<!--        <p>{{ with .Page.Params.second_title }}{{ . }}{{ end }}</p>-->
+<!--    </div>-->
+<!--    <div data-id="third-title" class="title">-->
+<!--        <div class="vision-line">-->
+<!--            <p>03</p>-->
+<!--            <div class="line"></div>-->
+<!--        </div>-->
+<!--        <p>{{ with .Page.Params.third_title }}{{ . }}{{ end }}</p>-->
+<!--    </div>-->
+<!--    <div data-id="fourth-title" class="title">-->
+<!--        <div class="vision-line">-->
+<!--            <p>04</p>-->
+<!--            <div class="line"></div>-->
+<!--        </div>-->
+<!--        <p>{{ with .Page.Params.fourth_title }}{{ . }}{{ end }}</p>-->
+<!--    </div>-->
+
+<!--    <div class="text-block">-->
+<!--        <div class="title-mob">-->
+<!--            <p class="title">{{ with .Page.Params.first_title }}{{ . }}{{ end }}</p>-->
+<!--        </div>-->
+<!--        <p id="first-title" class="text-active">-->
+<!--            We like to learn from your brand’s success. For it to succeed even further, we come up with the best ideas—and provide the resources and capital to realize that growth. Understanding every brand’s individual potential—it’s what we pay for—we usually structure our transactions as all-cash-deals. If desired, we are also happy to become your long-term partner.-->
+<!--        </p>-->
+<!--        <div class="title-mob">-->
+<!--            <p class="title">{{ with .Page.Params.second_title }}{{ . }}{{ end }}</p>-->
+<!--        </div>-->
+<!--        <p id="second-title">-->
+<!--            We have extensive financial firepower enabling us to deploy capital quickly—no external financing sources necessary.-->
+
+<!--        </p>-->
+<!--        <div class="title-mob">-->
+<!--            <p class="title">{{ with .Page.Params.third_title }}{{ . }}{{ end }}</p>-->
+<!--        </div>-->
+<!--        <p id="third-title" class="">-->
+<!--            We are serial acquirers of e-commerce, FBA and DTC stores—our team’s experience spans over 75+ years.-->
+
+<!--        </p>-->
+<!--        <div class="title-mob">-->
+<!--            <p class="title">{{ with .Page.Params.fourth_title }}{{ . }}{{ end }}</p>-->
+<!--        </div>-->
+<!--        <p id="fourth-title">-->
+<!--            We know how to expand your business in a sustainable way—from data to supply chain optimization, we own everything it needs to do so.-->
+
+<!--        </p>-->
+<!--    </div>-->
+<!--</section>-->
+{{ end }}
+{{ with .Site.GetPage "main" "look-brand" }}
+<section id="look-brand">
+    <div class="look-brand">
+        <div class="title">
+            <p>
+                {{ with .Page.Params.first_title }}{{ . }}{{ end }}
+            </p>
+        </div>
+        <div class="text-block">
+            <p>
+                {{ with .Page.Params.description }}{{ . }}{{ end }}
+            </p>
+            <a class="pop-up-block-open" href="{{ with .Page.Params.link_in_buttons }}{{ . }}{{ end }}">{{ with .Page.Params.text_in_buttons }}{{ . }}{{ end }}<span> <img src="/images/arrow-white.svg" alt="arrow"> </span> </a>
+        </div>
+    </div>
+</section>
+{{ end }}
+<!--<section id="brands" class="know-each-cont">-->
+<!--    <div class="investors">-->
+<!--        <div class="title">-->
+<!--            <h4>Get to know our investors</h4>-->
+<!--        </div>-->
+<!--        <div class="text">-->
+<!--            <p>They trust us—so you can too</p>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <div>-->
+<!--        <img src="/images/brands.png" alt="brands">-->
+<!--    </div>-->
+<!--</section>-->
+{{ with .Site.GetPage "main" "know-each" }}
+<section id="know-each">
+    <div class="know-each-cont">
+        <div class="know-each-img">
+            <img src="/images/image1.png" alt="plane-small">
+        </div>
+        <div class="know-each-text">
+            <div class="title">
+                <p>
+                    {{ with .Page.Params.first_title }}{{ . }}{{ end }}
+                </p>
+            </div>
+            <div class="text-block">
+                <p>
+                    {{ with .Page.Params.description }}{{ . }}{{ end }}
+
+                </p>
+                <a style="display: flex" class="pop-up-block-open" href="{{ with .Page.Params.link_in_buttons }}{{ . }}{{ end }}">{{ with .Page.Params.text_in_buttons }}{{ . }}{{ end }} <span> <img src="/images/arrow-blue.svg" alt="arrow"> </span> </a>
+            </div>
+        </div>
+    </div>
+</section>
+{{ end }}

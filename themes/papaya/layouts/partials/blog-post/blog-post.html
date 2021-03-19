@@ -1,0 +1,40 @@
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); })(window,document,'script','dataLayer','GTM-NFCXDLF');</script>
+<div class="container">
+    <section id="resources">
+        <div class="res-cont">
+            <div class="res-post">
+                <div class="res-post-title">
+                    <div class="title">
+                        <h1>
+                            {{ .Title }}
+                        </h1>
+                    </div>
+                    <div class="text-block">
+                        <p>
+                            {{ with .Page.Params.top_text_block }}{{ . }}{{ end }}
+                        </p>
+                    </div>
+                </div>
+                <div class="res-post-video">
+                    <img style="max-width: 100%;" src="{{ with .Page.Params.img }}{{ . }}{{ end }}" alt="">
+
+                </div>
+                <div class="res-post-text">
+                    {{ with .Page.Params.content | safeHTML  }}{{ . }}{{ end }}
+                    <div class="text-block">
+                        {{ range .Page.Params.content_block }}
+                        <p>{{ . | safeHTML }}</p>
+                        {{ end }}
+                        <p>
+                            <strong> Contact </strong><br>
+                            {{ with .Page.Params.contact_name | safeHTML  }}{{ . }}{{ end }}
+                            <br>
+                            <a href="mailto:{{ with .Page.Params.mail | safeHTML  }}{{ . }}{{ end }}">{{ with .Page.Params.mail | safeHTML  }}{{ . }}{{ end }}</a>
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

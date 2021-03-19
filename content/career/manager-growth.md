@@ -1,0 +1,13 @@
++++
+about_unybrand_text_row_1 = "Founded in 2020, unybrands provides a best-in-class experience to sellers looking to exit their Amazon FBA, Shopify DTC or WMT e-commerce business."
+about_unybrand_text_row_2 = "We are on a mission to shape the next generation of e-commerce. We do this by buying, building, and scaling brands operating on and off Amazon: With us, companies reach new heights—and stay at the very top of their game. It’s our deep experience in online retail, consumer goods and M&A that enables us to do so—it has also led renowned growth and VC investors as well as European family offices to back us. We operate globally with offices in Miami, Seattle, Berlin and London."
+city = "MIAMI"
+description = "Striving to expand unybrands’ brand portfolio, the future growth manager will be responsible for helping source new acquisition opportunities."
+layout = "career-post"
+page_about_role_text = "With the goal of expanding the unybrands brand portfolio, the Manager, Growth will be responsible for helping source new acquisition opportunities. The role will report directly to the Senior Director of Growth and will be responsible for building relationships with brokers and sourcing new acquisition opportunities, all while helping to grow and manage existing brands. unybrands is looking for a tenacious, ambitious team member who thinks outside of the box, works creatively and strategically to ensure all growth goals are not only achieved but surpassed."
+requirements = ["Experience in running a full-cycle deal flow", "Ability to use SFDC, Looker and other reporting tools", "Background in finance-Investment banking and/or M&A is a plus", "4+ years of e-commerce / SaaS sales experience"]
+requirements_bootom_text = "unybrands is an equal opportunity employer and considers all applicants for employment without any regard to race, skin color, religion, gender identity, sexual orientation, and age. Nor are applicants discriminated against on the basis of disability or protected classes."
+responsibilities = ["Create new out-of-the-box ideas on how to develop pipeline", "Provide regular updates to leadership on sourcing efforts, market updates and individual growth strategies", "Work cross-functionally with members of the I&I team", "Manage a pipeline and deal from conception to closed-won", "Attend conferences for Amazon sellers and build unybrands’ presence in the seller community", "Help develop and execute a growth strategy involving but not limited to building relationships with brokers, individual cold outreach and pipeline development", "Create and identify opportunities to grow the unybrands portfolio of brands"]
+title = "Manager, Growth"
+
++++

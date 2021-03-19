@@ -1,0 +1,61 @@
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); })(window,document,'script','dataLayer','GTM-NFCXDLF');</script>
+<section id="management">
+    <div class="title">
+        <h3>{{ .Title }}</h3>
+    </div>
+    <div class="text">
+        <p class="title">About the role:</p>
+        <p>{{ with .Page.Params.page_about_role_text }}{{ . }}{{ end }}</p>
+    </div>
+</section>
+<div class="role">
+    <section id="role">
+        <div class="row">
+            <div class="title">
+                <h3>Responsibilities include-but not limited to:
+                </h3>
+            </div>
+            <div class="text">
+                <ul>
+                    {{ range .Page.Params.responsibilities }}
+                      <li>{{ . }}</li>
+                    {{ end }}
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="title">
+                <h3>A successful team member will have:  </h3>
+            </div>
+            <div class="text">
+                <ul>
+                    {{ range .Page.Params.requirements }}
+                    <li>{{ . }}</li>
+                    {{ end }}
+                </ul>
+                <p>{{ with .Page.Params.requirements_bootom_text }}{{ . }}{{ end }}</p>
+                <p> </p>
+            </div>
+        </div>
+    </section>
+</div>
+<section id="management-about">
+    <div class="title">
+        <h3>About unybrands:</h3>
+    </div>
+    <div class="text">
+        <div class="line-t">
+            <p>{{ with .Page.Params.about_unybrand_text_row_1 }}{{ . }}{{ end }}</p>
+            <p>{{ with .Page.Params.about_unybrand_text_row_2 }}{{ . }}{{ end }}</p>
+        </div>
+        <a href="mailto:ii@unybrands.com?subject=Career">apply now <img src="/images/arrow-blue.svg" alt=""></a>
+    </div>
+</section>
+<!--<section id="career">-->
+<!--    <div class="title">-->
+<!--        <h2>Join our team</h2>-->
+<!--    </div>-->
+<!--    <div class="text">-->
+<!--        <p>Our approach is always honest, efficient and collaborative. We envision your brand to grow as fast and sustainably as possible—fairness and integrity are the guiding principles behind everything we do, including our transactions.</p>-->
+<!--    </div>-->
+<!--</section>-->

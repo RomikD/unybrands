@@ -1,0 +1,138 @@
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); })(window,document,'script','dataLayer','GTM-NFCXDLF');</script>
+<section id="sell-title">
+    {{ with .Site.GetPage "sell-to-us" "sell_to_us" }}
+    <h1>{{ .Title }}</h1>
+</section>
+
+<div class="sell-to-us">
+    <section id="sell-to-us">
+        <div class="sell-text">
+            <div class="title">
+                <p>
+                    {{ with .Page.Params.second_block_title }}{{ . }}{{ end }}
+                </p>
+            </div>
+            <div class="text-block">
+                <p>{{ with .Page.Params.second_block_description_row_1 }}{{ . }}{{ end }}</p>
+                <p>
+                    {{ with .Page.Params.second_block_description_row_2 }}{{ . }}{{ end }}
+                </p>
+            </div>
+        </div>
+        <div class="sell-img">
+            <img src="/images/refdxwsa.png" alt="">
+        </div>
+    </section>
+</div>
+<div class="idea-sell">
+    <section id="idea-sell">
+        <div class="quote">
+            <img src="/images/marks.svg" alt="">
+            <div class="txt">
+                <h4>{{ with .Page.Params.quote }}{{ . }}{{ end }}</h4>
+                <p>{{ with .Page.Params.author_quote }}{{ . }}{{ end }}</p>
+            </div>
+        </div>
+    </section>
+</div>
+
+<section id="vision" class="home">
+    <div class="title">
+        <div class="vision-line">
+            <p id="vision-number">01</p>
+            <div class="line"></div>
+        </div>
+        <p id="vision-title">{{ with .Page.Params.first_title }}{{ . }}{{ end }}</p>
+    </div>
+
+    <div class="text-block">
+        <div class="title-mob">
+            <p class="title">{{ with .Page.Params.first_title }}{{ . }}{{ end }}</p>
+        </div>
+        <p data-number="01" data-title="{{ with .Page.Params.first_title }}{{ . }}{{ end }}" class="first-p-text text-active">
+            {{ with .Page.Params.first_description }}{{ . }}{{ end }}
+        </p>
+        <div class="title-mob">
+            <p class="title">{{ with .Page.Params.second_title }}{{ . }}{{ end }}</p>
+        </div>
+        <p data-number="02" data-title="{{ with .Page.Params.second_title }}{{ . }}{{ end }}">
+            {{ with .Page.Params.second_description }}{{ . }}{{ end }}
+        </p>
+        <div class="title-mob">
+            <p class="title">{{ with .Page.Params.third_title }}{{ . }}{{ end }}</p>
+        </div>
+        <p data-number="03" data-title="{{ with .Page.Params.third_title }}{{ . }}{{ end }}">
+            {{ with .Page.Params.third_description }}{{ . }}{{ end }}
+        </p>
+        <div class="title-mob">
+            <p class="title">{{ with .Page.Params.fourth_title }}{{ . }}{{ end }}</p>
+        </div>
+        <p data-number="04" data-title="{{ with .Page.Params.fourth_title }}{{ . }}{{ end }}">
+            {{ with .Page.Params.fourth_description }}{{ . }}{{ end }}
+        </p>
+        <div class="title-mob">
+            <p class="title">{{ with .Page.Params.fifth_title }}{{ . }}{{ end }}</p>
+        </div>
+        <p data-number="05" data-title="{{ with .Page.Params.fifth_title }}{{ . }}{{ end }}">
+            {{ with .Page.Params.fifth_description }}{{ . }}{{ end }}
+        </p>
+    </div>
+
+</section>
+{{ end }}
+<!--<section id="vision" class="home">-->
+<!--    <div data-id="first-title" class="title title-active">-->
+<!--        <div class="vision-line">-->
+<!--            <p>01</p>-->
+<!--            <div class="line"></div>-->
+<!--        </div>-->
+<!--        <p>Step 1</p>-->
+<!--    </div>-->
+<!--    <div data-id="second-title" class="title">-->
+<!--        <div class="vision-line">-->
+<!--            <p>02</p>-->
+<!--            <div class="line"></div>-->
+<!--        </div>-->
+<!--        <p>Step 2</p>-->
+<!--    </div>-->
+<!--    <div data-id="third-title" class="title">-->
+<!--        <div class="vision-line">-->
+<!--            <p>03</p>-->
+<!--            <div class="line"></div>-->
+<!--        </div>-->
+<!--        <p>Step 3</p>-->
+<!--    </div>-->
+<!--    <div data-id="fourth-title" class="title">-->
+<!--        <div class="vision-line">-->
+<!--            <p>04</p>-->
+<!--            <div class="line"></div>-->
+<!--        </div>-->
+<!--        <p>Step 4</p>-->
+<!--    </div>-->
+<!--    <div data-id="fiv-title" class="title">-->
+<!--        <div class="vision-line">-->
+<!--            <p>05</p>-->
+<!--            <div class="line"></div>-->
+<!--        </div>-->
+<!--        <p>Step 5</p>-->
+<!--    </div>-->
+
+<!--    <div class="text-block">-->
+<!--        <p id="first-title" class="text-active">-->
+<!--            We discuss your business-->
+<!--        </p>-->
+<!--        <p id="second-title">-->
+<!--            We send you our notes, valuation and offer-->
+<!--        </p>-->
+<!--        <p id="third-title">-->
+<!--            We agree to the terms-->
+<!--        </p>-->
+<!--        <p id="fourth-title">-->
+<!--            You help us understand your business—we leverage our industry knowledge to design and develop the best growth strategy-->
+<!--        </p>-->
+<!--        <p id="fiv-title">-->
+<!--            We finalize the payment and transaction in less than 4 weeks. Immediately after we begin integrating your brand onto the unybrands platform-->
+<!--        </p>-->
+<!--        <a style="display: flex" href="/application/">Ready to sell? <span> <img src="/images/arrow-blue.svg" alt="arrow"> </span> </a>-->
+<!--    </div>-->
+<!--</section>-->

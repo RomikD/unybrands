@@ -1,0 +1,76 @@
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); })(window,document,'script','dataLayer','GTM-NFCXDLF');</script>
+
+
+<section class="header-about-bottom-head" style="background-image: url(/images/about-bg.png);">
+    {{ with .Site.GetPage "about" "about_content" }}
+    <div class="bottom-head">
+        <div class="text-block">
+            <p>
+                Amazon FBA, Shopify DTC, WMT <br>
+                e-commerce, you name it: With deep experience in online retail, consumer goods and M&A, we know how to successfully buy, build and boost brands.
+            </p>
+            <p>
+                Data and technology drive our decisions—and enable us to grow fast and thrive sustainably. With us, brands reach new heights—and stay at the very top of their game. Because we’re in it for the long haul.
+            </p>
+        </div>
+        <div class="title">
+            <h1>{{ .Title }}</h1>
+            <div class="line"></div>
+            <h2>
+                {{ with .Page.Params.second_block_title }}{{ . }}{{ end }}
+            </h2>
+        </div>
+    </div>
+</section>
+
+<section id="vision" class="home">
+    <div class="title">
+        <div class="vision-line">
+            <p id="vision-number">01</p>
+            <div class="line"></div>
+        </div>
+        <p id="vision-title">{{ with .Page.Params.first_title }}{{ . }}{{ end }}</p>
+    </div>
+
+    <div class="text-block">
+        <div class="title-mob">
+            <p class="title">{{ with .Page.Params.first_title }}{{ . }}{{ end }}</p>
+        </div>
+        <p data-number="01" data-title="{{ with .Page.Params.first_title }}{{ . }}{{ end }}" class="first-p-text text-active">
+            {{ with .Page.Params.first_description }}{{ . }}{{ end }}
+        </p>
+        <div class="title-mob">
+            <p class="title">{{ with .Page.Params.second_title }}{{ . }}{{ end }}</p>
+        </div>
+        <p data-number="02" data-title="{{ with .Page.Params.second_title }}{{ . }}{{ end }}">
+            {{ with .Page.Params.second_description }}{{ . }}{{ end }}
+        </p>
+        <div class="title-mob">
+            <p class="title">{{ with .Page.Params.third_title }}{{ . }}{{ end }}</p>
+        </div>
+        <p data-number="03" data-title="{{ with .Page.Params.third_title }}{{ . }}{{ end }}">
+            {{ with .Page.Params.third_description }}{{ . }}{{ end }}
+        </p>
+    </div>
+
+</section>
+<section id="sec-screen" class="sec-screen-about">
+    <div class="screen-img">
+        <img src="/images/newaboutimg.png" alt="">
+    </div>
+    <div class="screen-text about-screen-text">
+        <div class="text-block">
+            <p>{{ with .Page.Params.second_text_block  | safeHTML }}{{ . }}{{ end }}</p>
+
+            <p>{{ with .Page.Params.second_text2_block  | safeHTML }}{{ . }}{{ end }}</p>
+
+            <a href="/team/">MEET OUR TEAM
+                <span>
+                     <img class="default" src="/images/arrow-big.png" alt="arrow-big">
+                     <img class="hoverImg" src="/images/arrow-big.png" alt="arrow-big">
+                 </span>
+            </a>
+        </div>
+    </div>
+</section>
+{{ end }}

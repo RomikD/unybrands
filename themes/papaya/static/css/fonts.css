@@ -1,0 +1,28 @@
+@font-face {
+    font-family: 'Object-Sans-Regular';
+    src: url(../fonts/ObjectSans/ObjectSans-Regular.otf) format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Object-Sans-Slanted';
+    src: url(../fonts/ObjectSans/ObjectSans-Slanted.otf) format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Object-Sans-Heavy';
+    src: url(../fonts/ObjectSans/ObjectSans-Heavy.otf) format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Object-Sans-HeavySlanted';
+    src: url(../fonts/ObjectSans/ObjectSans-HeavySlanted.otf) format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+

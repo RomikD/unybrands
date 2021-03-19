@@ -1,0 +1,4 @@
+---
+layout: 'manager_growth'
+
+---
